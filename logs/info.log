@@ -1,0 +1,182 @@
+2024-08-01 14:45:47,262 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Splitting PDF into pages: 0,1,2,7
+2024-08-01 14:45:47,318 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Adding page 0 to split document
+2024-08-01 14:45:47,331 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Adding page 1 to split document
+2024-08-01 14:45:47,334 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Adding page 2 to split document
+2024-08-01 14:45:47,336 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Adding page 3 to split document
+2024-08-01 14:45:47,338 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Adding page 4 to split document
+2024-08-01 14:45:47,341 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Adding page 5 to split document
+2024-08-01 14:45:47,342 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Adding page 6 to split document
+2024-08-01 14:45:47,342 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Adding page 7 to split document
+2024-08-01 14:45:47,352 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Wrote split document [Untitled] (1)_1.pdf to zip file
+2024-08-01 14:45:47,359 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Wrote split document [Untitled] (1)_2.pdf to zip file
+2024-08-01 14:45:47,364 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Wrote split document [Untitled] (1)_3.pdf to zip file
+2024-08-01 14:45:47,386 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Wrote split document [Untitled] (1)_4.pdf to zip file
+2024-08-01 14:45:47,389 INFO s.s.S.c.a.SplitPDFController [qtp1002872041-57] Successfully created zip file with split documents: /tmp/split_documents7635696657659191752.zip
+2024-08-01 14:49:08,100 INFO s.s.S.c.a.RearrangePagesPDFController [qtp1002872041-55] newPageOrder = [0, 1]
+2024-08-01 14:49:08,100 INFO s.s.S.c.a.RearrangePagesPDFController [qtp1002872041-55] totalPages = 8
+2024-08-01 14:49:34,795 INFO s.s.S.c.a.RearrangePagesPDFController [qtp1002872041-41] newPageOrder = [3, 4, 5, 6]
+2024-08-01 14:49:34,797 INFO s.s.S.c.a.RearrangePagesPDFController [qtp1002872041-41] totalPages = 8
+2024-08-01 16:56:11,377 INFO s.s.S.u.ProcessExecutor [qtp1002872041-48] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_14130277626565796360.pdf /tmp/input_1185827760834700791.pdf
+2024-08-01 16:56:27,570 INFO s.s.S.c.a.m.CompressController [qtp1002872041-48] Increasing ghostscript optimisation level to 3
+2024-08-01 16:56:27,572 INFO s.s.S.u.ProcessExecutor [qtp1002872041-48] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_14130277626565796360.pdf /tmp/input_1185827760834700791.pdf
+2024-08-01 16:56:42,993 INFO s.s.S.c.a.m.CompressController [qtp1002872041-48] Increasing ghostscript optimisation level to 4
+2024-08-01 16:56:42,994 INFO s.s.S.u.ProcessExecutor [qtp1002872041-48] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_14130277626565796360.pdf /tmp/input_1185827760834700791.pdf
+2024-08-01 16:57:13,239 INFO s.s.S.c.a.m.CompressController [qtp1002872041-48] Skipping level 5 due to bad results in auto mode
+2024-08-01 18:29:36,566 INFO s.s.S.SPdfApplication [main] Starting SPdfApplication v0.26.1 using Java 21.0.3 with PID 10 (/app.jar started by stirlingpdfuser in /)
+2024-08-01 18:29:36,576 INFO s.s.S.SPdfApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-01 18:29:39,642 INFO o.s.b.w.e.j.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2024-08-01 18:29:39,664 INFO o.e.j.s.Server [main] jetty-12.0.7; built: 2024-02-29T21:19:41.771Z; git: c89aca8fd34083befd79f328a3b8b6ffff04347e; jvm 21.0.3+9-alpine-r0
+2024-08-01 18:29:39,730 INFO o.e.j.s.h.C.application [main] Initializing Spring embedded WebApplicationContext
+2024-08-01 18:29:39,731 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3004 ms
+2024-08-01 18:29:40,087 INFO o.e.j.s.DefaultSessionIdManager [main] Session workerName=node0
+2024-08-01 18:29:40,102 INFO o.e.j.s.h.ContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@51f68849{application,/,b=[file:/tmp/jetty-docbase.8080.10142602528791296209/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@5520f675{STARTED}}
+2024-08-01 18:29:40,104 INFO o.e.j.e.s.ServletContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@51f68849{application,/,b=[file:/tmp/jetty-docbase.8080.10142602528791296209/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@5520f675{STARTED}}
+2024-08-01 18:29:40,125 INFO o.e.j.s.Server [main] Started oejs.Server@15e1f8fe{STARTING}[12.0.7,sto=0] @7588ms
+2024-08-01 18:29:40,219 INFO s.s.S.SPdfApplication [main] Running configs ApplicationProperties [security=Security [enableLogin=false, oauth2=null, initialLogin=null, csrfDisabled=true], system=System [defaultLocale=es-CO, googlevisibility=false, enableAlphaFunctionality=false, showUpdate=false, showUpdateOnlyAdmin=false], ui=UserInterface [appName=App Invima PDF, homeDescription=Aplicación para gestionar PDFs en Invima, appNameNavbar=], endpoints=Endpoints [toRemove=[], groupsToRemove=[]], metrics=Metrics [enabled=true], automaticallyGenerated=AutomaticallyGenerated [key=MASKED], autoPipeline=null]
+2024-08-01 18:29:41,093 INFO s.s.S.c.EndpointConfiguration [main] Disabling pdf-to-book
+2024-08-01 18:29:41,094 INFO s.s.S.c.EndpointConfiguration [main] Disabling book-to-pdf
+2024-08-01 18:29:41,360 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: ServletContext resource [/index.html]
+2024-08-01 18:29:42,022 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-01 18:29:42,093 INFO o.e.j.s.h.C.application [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-01 18:29:42,093 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcherServlet'
+2024-08-01 18:29:42,095 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 1 ms
+2024-08-01 18:29:42,121 INFO o.e.j.s.AbstractConnector [main] Started ServerConnector@4db2db2e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2024-08-01 18:29:42,123 INFO o.s.b.w.e.j.JettyWebServer [main] Jetty started on port 8080 (http/1.1) with context path '/'
+2024-08-01 18:29:42,150 INFO s.s.S.SPdfApplication [main] Started SPdfApplication in 6.762 seconds (process running for 9.613)
+2024-08-01 18:29:42,163 WARN s.s.S.u.FileMonitor [scheduling-1] not monitoring any directory, even the root directory itself: ./pipeline/watchedFolders
+2024-08-01 18:29:42,171 INFO s.s.S.u.FileMonitor [scheduling-1] Registered directory: ./pipeline/watchedFolders
+2024-08-01 18:29:43,172 INFO s.s.S.SPdfApplication [main] Stirling-PDF Started.
+2024-08-01 18:29:43,172 INFO s.s.S.SPdfApplication [main] Navigate to http://localhost:8080
+2024-08-01 18:34:33,363 INFO s.s.S.u.ProcessExecutor [qtp436028378-25] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_15551263011429485785.pdf /tmp/input_2106955045242375370.pdf
+2024-08-01 18:34:48,853 INFO s.s.S.c.a.m.CompressController [qtp436028378-25] Increasing ghostscript optimisation level to 3
+2024-08-01 18:34:48,854 INFO s.s.S.u.ProcessExecutor [qtp436028378-25] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_15551263011429485785.pdf /tmp/input_2106955045242375370.pdf
+2024-08-01 18:35:04,186 INFO s.s.S.c.a.m.CompressController [qtp436028378-25] Increasing ghostscript optimisation level to 4
+2024-08-01 18:35:04,187 INFO s.s.S.u.ProcessExecutor [qtp436028378-25] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_15551263011429485785.pdf /tmp/input_2106955045242375370.pdf
+2024-08-01 18:35:24,087 INFO s.s.S.u.ProcessExecutor [qtp436028378-30] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_14872949253171726083.pdf /tmp/input_3647126248353436032.pdf
+2024-08-01 18:35:35,076 INFO s.s.S.c.a.m.CompressController [qtp436028378-25] Skipping level 5 due to bad results in auto mode
+2024-08-01 18:35:41,596 INFO s.s.S.c.a.m.CompressController [qtp436028378-30] Increasing ghostscript optimisation level to 3
+2024-08-01 18:35:41,597 INFO s.s.S.u.ProcessExecutor [qtp436028378-30] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_14872949253171726083.pdf /tmp/input_3647126248353436032.pdf
+2024-08-01 18:35:58,857 INFO s.s.S.c.a.m.CompressController [qtp436028378-30] Increasing ghostscript optimisation level to 4
+2024-08-01 18:35:58,858 INFO s.s.S.u.ProcessExecutor [qtp436028378-30] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_14872949253171726083.pdf /tmp/input_3647126248353436032.pdf
+2024-08-01 18:36:35,456 INFO s.s.S.c.a.m.CompressController [qtp436028378-30] Skipping level 5 due to bad results in auto mode
+2024-08-01 20:02:49,846 INFO s.s.S.SPdfApplication [main] Starting SPdfApplication v0.26.1 using Java 21.0.3 with PID 11 (/app.jar started by stirlingpdfuser in /)
+2024-08-01 20:02:49,850 INFO s.s.S.SPdfApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-01 20:02:52,779 INFO o.s.b.w.e.j.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2024-08-01 20:02:52,790 INFO o.e.j.s.Server [main] jetty-12.0.7; built: 2024-02-29T21:19:41.771Z; git: c89aca8fd34083befd79f328a3b8b6ffff04347e; jvm 21.0.3+9-alpine-r0
+2024-08-01 20:02:52,895 INFO o.e.j.s.h.C.application [main] Initializing Spring embedded WebApplicationContext
+2024-08-01 20:02:52,898 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2914 ms
+2024-08-01 20:02:53,449 INFO o.e.j.s.DefaultSessionIdManager [main] Session workerName=node0
+2024-08-01 20:02:53,461 INFO o.e.j.s.h.ContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@51f68849{application,/,b=[file:/tmp/jetty-docbase.8080.8464949329575039891/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@5520f675{STARTED}}
+2024-08-01 20:02:53,463 INFO o.e.j.e.s.ServletContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@51f68849{application,/,b=[file:/tmp/jetty-docbase.8080.8464949329575039891/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@5520f675{STARTED}}
+2024-08-01 20:02:53,485 INFO o.e.j.s.Server [main] Started oejs.Server@15e1f8fe{STARTING}[12.0.7,sto=0] @8030ms
+2024-08-01 20:02:53,569 INFO s.s.S.SPdfApplication [main] Running configs ApplicationProperties [security=Security [enableLogin=false, oauth2=null, initialLogin=null, csrfDisabled=true], system=System [defaultLocale=es-CO, googlevisibility=false, enableAlphaFunctionality=false, showUpdate=false, showUpdateOnlyAdmin=false], ui=UserInterface [appName=App Invima PDF, homeDescription=Aplicación para gestionar PDFs en Invima, appNameNavbar=], endpoints=Endpoints [toRemove=[], groupsToRemove=[]], metrics=Metrics [enabled=true], automaticallyGenerated=AutomaticallyGenerated [key=MASKED], autoPipeline=null]
+2024-08-01 20:02:54,528 INFO s.s.S.c.EndpointConfiguration [main] Disabling pdf-to-book
+2024-08-01 20:02:54,529 INFO s.s.S.c.EndpointConfiguration [main] Disabling book-to-pdf
+2024-08-01 20:02:54,824 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: ServletContext resource [/index.html]
+2024-08-01 20:02:55,612 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-01 20:02:55,703 INFO o.e.j.s.h.C.application [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-01 20:02:55,707 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcherServlet'
+2024-08-01 20:02:55,709 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 1 ms
+2024-08-01 20:02:55,740 INFO o.e.j.s.AbstractConnector [main] Started ServerConnector@4db2db2e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2024-08-01 20:02:55,742 INFO o.s.b.w.e.j.JettyWebServer [main] Jetty started on port 8080 (http/1.1) with context path '/'
+2024-08-01 20:02:55,770 INFO s.s.S.SPdfApplication [main] Started SPdfApplication in 7.031 seconds (process running for 10.316)
+2024-08-01 20:02:55,787 WARN s.s.S.u.FileMonitor [scheduling-1] not monitoring any directory, even the root directory itself: ./pipeline/watchedFolders
+2024-08-01 20:02:55,789 INFO s.s.S.u.FileMonitor [scheduling-1] Registered directory: ./pipeline/watchedFolders
+2024-08-01 20:02:56,789 INFO s.s.S.SPdfApplication [main] Stirling-PDF Started.
+2024-08-01 20:02:56,790 INFO s.s.S.SPdfApplication [main] Navigate to http://localhost:8080
+2024-08-01 20:08:54,629 INFO s.s.S.SPdfApplication [main] Starting SPdfApplication v0.26.1 using Java 21.0.3 with PID 10 (/app.jar started by stirlingpdfuser in /)
+2024-08-01 20:08:54,635 INFO s.s.S.SPdfApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-01 20:08:59,452 INFO o.s.b.w.e.j.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2024-08-01 20:08:59,474 INFO o.e.j.s.Server [main] jetty-12.0.7; built: 2024-02-29T21:19:41.771Z; git: c89aca8fd34083befd79f328a3b8b6ffff04347e; jvm 21.0.3+9-alpine-r0
+2024-08-01 20:08:59,690 INFO o.e.j.s.h.C.application [main] Initializing Spring embedded WebApplicationContext
+2024-08-01 20:08:59,697 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4901 ms
+2024-08-01 20:09:00,418 INFO o.e.j.s.DefaultSessionIdManager [main] Session workerName=node0
+2024-08-01 20:09:00,445 INFO o.e.j.s.h.ContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@51f68849{application,/,b=[file:/tmp/jetty-docbase.8080.12236655315269588482/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@5520f675{STARTED}}
+2024-08-01 20:09:00,447 INFO o.e.j.e.s.ServletContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@51f68849{application,/,b=[file:/tmp/jetty-docbase.8080.12236655315269588482/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@5520f675{STARTED}}
+2024-08-01 20:09:00,524 INFO o.e.j.s.Server [main] Started oejs.Server@15e1f8fe{STARTING}[12.0.7,sto=0] @11048ms
+2024-08-01 20:09:00,720 INFO s.s.S.SPdfApplication [main] Running configs ApplicationProperties [security=Security [enableLogin=false, oauth2=null, initialLogin=null, csrfDisabled=true], system=System [defaultLocale=es-CO, googlevisibility=false, enableAlphaFunctionality=false, showUpdate=false, showUpdateOnlyAdmin=false], ui=UserInterface [appName=App Invima PDF, homeDescription=Aplicación para gestionar PDFs en Invima, appNameNavbar=], endpoints=Endpoints [toRemove=[], groupsToRemove=[]], metrics=Metrics [enabled=true], automaticallyGenerated=AutomaticallyGenerated [key=MASKED], autoPipeline=null]
+2024-08-01 20:09:03,184 INFO s.s.S.c.EndpointConfiguration [main] Disabling pdf-to-book
+2024-08-01 20:09:03,185 INFO s.s.S.c.EndpointConfiguration [main] Disabling book-to-pdf
+2024-08-01 20:09:03,678 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: ServletContext resource [/index.html]
+2024-08-01 20:09:05,316 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-01 20:09:05,443 INFO o.e.j.s.h.C.application [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-01 20:09:05,446 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcherServlet'
+2024-08-01 20:09:05,449 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 2 ms
+2024-08-01 20:09:05,517 INFO o.e.j.s.AbstractConnector [main] Started ServerConnector@7914bb3d{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2024-08-01 20:09:05,520 INFO o.s.b.w.e.j.JettyWebServer [main] Jetty started on port 8080 (http/1.1) with context path '/'
+2024-08-01 20:09:05,560 INFO s.s.S.SPdfApplication [main] Started SPdfApplication in 12.272 seconds (process running for 16.085)
+2024-08-01 20:09:05,574 WARN s.s.S.u.FileMonitor [scheduling-1] not monitoring any directory, even the root directory itself: ./pipeline/watchedFolders
+2024-08-01 20:09:05,584 INFO s.s.S.u.FileMonitor [scheduling-1] Registered directory: ./pipeline/watchedFolders
+2024-08-01 20:09:06,590 INFO s.s.S.SPdfApplication [main] Stirling-PDF Started.
+2024-08-01 20:09:06,590 INFO s.s.S.SPdfApplication [main] Navigate to http://localhost:8080
+2024-08-01 20:32:45,963 INFO s.s.S.u.ProcessExecutor [qtp436028378-38] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_5890597734099424989.pdf /tmp/input_13913306692495514678.pdf
+2024-08-01 20:33:02,690 WARN s.s.S.c.a.m.CompressController [qtp436028378-38] Optimized file is larger than the original. Returning the original file instead.
+2024-08-01 20:33:27,589 INFO s.s.S.u.ProcessExecutor [qtp436028378-39] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_10692396835182888980.pdf /tmp/input_13104688971501050470.pdf
+2024-08-01 20:33:58,207 WARN s.s.S.c.a.m.CompressController [qtp436028378-39] Optimized file is larger than the original. Returning the original file instead.
+2024-08-01 20:35:56,916 INFO s.s.S.SPdfApplication [main] Starting SPdfApplication v0.26.1 using Java 21.0.3 with PID 10 (/app.jar started by stirlingpdfuser in /)
+2024-08-01 20:35:56,925 INFO s.s.S.SPdfApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-01 20:36:00,361 INFO o.s.b.w.e.j.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2024-08-01 20:36:00,378 INFO o.e.j.s.Server [main] jetty-12.0.7; built: 2024-02-29T21:19:41.771Z; git: c89aca8fd34083befd79f328a3b8b6ffff04347e; jvm 21.0.3+9-alpine-r0
+2024-08-01 20:36:00,443 INFO o.e.j.s.h.C.application [main] Initializing Spring embedded WebApplicationContext
+2024-08-01 20:36:00,445 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3355 ms
+2024-08-01 20:36:00,786 INFO o.e.j.s.DefaultSessionIdManager [main] Session workerName=node0
+2024-08-01 20:36:00,820 INFO o.e.j.s.h.ContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@54ccb3{application,/,b=[file:/tmp/jetty-docbase.8080.15197007385007975777/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@621f23ac{STARTED}}
+2024-08-01 20:36:00,822 INFO o.e.j.e.s.ServletContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@54ccb3{application,/,b=[file:/tmp/jetty-docbase.8080.15197007385007975777/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@621f23ac{STARTED}}
+2024-08-01 20:36:00,836 INFO o.e.j.s.Server [main] Started oejs.Server@15e1f8fe{STARTING}[12.0.7,sto=0] @6262ms
+2024-08-01 20:36:00,912 INFO s.s.S.SPdfApplication [main] Running configs ApplicationProperties [security=Security [enableLogin=false, oauth2=null, initialLogin=null, csrfDisabled=true], system=System [defaultLocale=es-CO, googlevisibility=false, enableAlphaFunctionality=false, showUpdate=false, showUpdateOnlyAdmin=false], ui=UserInterface [appName=App Invima PDF, homeDescription=Aplicación para gestionar PDFs en Invima, appNameNavbar=], endpoints=Endpoints [toRemove=[], groupsToRemove=[]], metrics=Metrics [enabled=true], automaticallyGenerated=AutomaticallyGenerated [key=MASKED], autoPipeline=null]
+2024-08-01 20:36:01,683 INFO s.s.S.c.EndpointConfiguration [main] Disabling pdf-to-book
+2024-08-01 20:36:01,684 INFO s.s.S.c.EndpointConfiguration [main] Disabling book-to-pdf
+2024-08-01 20:36:01,957 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: ServletContext resource [/index.html]
+2024-08-01 20:36:02,776 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-01 20:36:02,856 INFO o.e.j.s.h.C.application [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-01 20:36:02,858 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcherServlet'
+2024-08-01 20:36:02,861 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 2 ms
+2024-08-01 20:36:02,881 INFO o.e.j.s.AbstractConnector [main] Started ServerConnector@f46cc20{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2024-08-01 20:36:02,884 INFO o.s.b.w.e.j.JettyWebServer [main] Jetty started on port 8080 (http/1.1) with context path '/'
+2024-08-01 20:36:02,923 INFO s.s.S.SPdfApplication [main] Started SPdfApplication in 6.996 seconds (process running for 8.35)
+2024-08-01 20:36:02,933 WARN s.s.S.u.FileMonitor [scheduling-1] not monitoring any directory, even the root directory itself: ./pipeline/watchedFolders
+2024-08-01 20:36:02,940 INFO s.s.S.u.FileMonitor [scheduling-1] Registered directory: ./pipeline/watchedFolders
+2024-08-01 20:36:03,947 INFO s.s.S.SPdfApplication [main] Stirling-PDF Started.
+2024-08-01 20:36:03,948 INFO s.s.S.SPdfApplication [main] Navigate to http://localhost:8080
+2024-08-01 20:36:51,869 INFO s.s.S.u.ProcessExecutor [qtp436028378-38] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_129990815242677603.pdf /tmp/input_14425250966255966303.pdf
+2024-08-01 20:37:07,323 WARN s.s.S.c.a.m.CompressController [qtp436028378-38] Optimized file is larger than the original. Returning the original file instead.
+2024-08-01 20:37:38,869 INFO s.s.S.u.ProcessExecutor [qtp436028378-30] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_556791545540046343.pdf /tmp/input_12946854940649788833.pdf
+2024-08-01 20:37:54,449 INFO s.s.S.c.a.m.CompressController [qtp436028378-30] Increasing ghostscript optimisation level to 3
+2024-08-01 20:37:54,450 INFO s.s.S.u.ProcessExecutor [qtp436028378-30] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_556791545540046343.pdf /tmp/input_12946854940649788833.pdf
+2024-08-01 20:38:10,170 INFO s.s.S.c.a.m.CompressController [qtp436028378-30] Increasing ghostscript optimisation level to 4
+2024-08-01 20:38:10,171 INFO s.s.S.u.ProcessExecutor [qtp436028378-30] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_556791545540046343.pdf /tmp/input_12946854940649788833.pdf
+2024-08-01 20:38:29,859 INFO s.s.S.u.ProcessExecutor [qtp436028378-32] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_11035152920459070673.pdf /tmp/input_2872774884649382634.pdf
+2024-08-01 20:38:40,845 INFO s.s.S.c.a.m.CompressController [qtp436028378-30] Skipping level 5 due to bad results in auto mode
+2024-08-01 20:38:47,277 INFO s.s.S.c.a.m.CompressController [qtp436028378-32] Increasing ghostscript optimisation level to 3
+2024-08-01 20:38:47,277 INFO s.s.S.u.ProcessExecutor [qtp436028378-32] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_11035152920459070673.pdf /tmp/input_2872774884649382634.pdf
+2024-08-01 20:39:04,082 INFO s.s.S.c.a.m.CompressController [qtp436028378-32] Increasing ghostscript optimisation level to 4
+2024-08-01 20:39:04,083 INFO s.s.S.u.ProcessExecutor [qtp436028378-32] Running command: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/output_11035152920459070673.pdf /tmp/input_2872774884649382634.pdf
+2024-08-01 20:39:36,366 INFO s.s.S.c.a.m.CompressController [qtp436028378-32] Skipping level 5 due to bad results in auto mode
+2024-08-01 20:55:01,012 WARN o.a.p.p.PDDocument [qtp436028378-30] You are overwriting the existing file output_556791545540046343.pdf, this will produce a corrupted file if you're also reading from it
+2024-08-01 20:55:02,041 INFO s.s.S.c.a.m.CompressController [qtp436028378-30] Current file size: 49 MB
+2024-08-01 20:55:02,049 INFO s.s.S.c.a.m.CompressController [qtp436028378-30] Current scale factor: 0.8999999761581421
+2024-08-01 21:22:28,321 INFO s.s.S.SPdfApplication [main] Starting SPdfApplication v0.26.1 using Java 21.0.3 with PID 9 (/app.jar started by stirlingpdfuser in /)
+2024-08-01 21:22:28,332 INFO s.s.S.SPdfApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-01 21:22:39,717 INFO o.s.b.w.e.j.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2024-08-01 21:22:39,748 INFO o.e.j.s.Server [main] jetty-12.0.7; built: 2024-02-29T21:19:41.771Z; git: c89aca8fd34083befd79f328a3b8b6ffff04347e; jvm 21.0.3+9-alpine-r0
+2024-08-01 21:22:39,919 INFO o.e.j.s.h.C.application [main] Initializing Spring embedded WebApplicationContext
+2024-08-01 21:22:39,926 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 11226 ms
+2024-08-01 21:22:40,772 INFO o.e.j.s.DefaultSessionIdManager [main] Session workerName=node0
+2024-08-01 21:22:40,797 INFO o.e.j.s.h.ContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@51f68849{application,/,b=[file:/tmp/jetty-docbase.8080.2781145759921022536/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@5520f675{STARTED}}
+2024-08-01 21:22:40,805 INFO o.e.j.e.s.ServletContextHandler [main] Started osbwej.JettyEmbeddedWebAppContext@51f68849{application,/,b=[file:/tmp/jetty-docbase.8080.2781145759921022536/, URLResource@BA730246(jar:nested:///app.jar/!BOOT-INF/lib/swagger-ui-5.2.0.jar!/META-INF/resources/)],a=AVAILABLE,h=oeje10s.SessionHandler@5520f675{STARTED}}
+2024-08-01 21:22:40,884 INFO o.e.j.s.Server [main] Started oejs.Server@15e1f8fe{STARTING}[12.0.7,sto=0] @31898ms
+2024-08-01 21:22:40,977 INFO s.s.S.SPdfApplication [main] Running configs ApplicationProperties [security=Security [enableLogin=false, oauth2=null, initialLogin=null, csrfDisabled=true], system=System [defaultLocale=es-CO, googlevisibility=false, enableAlphaFunctionality=false, showUpdate=false, showUpdateOnlyAdmin=false], ui=UserInterface [appName=App Invima PDF, homeDescription=Aplicación para gestionar PDFs en Invima, appNameNavbar=], endpoints=Endpoints [toRemove=[], groupsToRemove=[]], metrics=Metrics [enabled=true], automaticallyGenerated=AutomaticallyGenerated [key=MASKED], autoPipeline=null]
+2024-08-01 21:22:43,386 INFO s.s.S.c.EndpointConfiguration [main] Disabling pdf-to-book
+2024-08-01 21:22:43,389 INFO s.s.S.c.EndpointConfiguration [main] Disabling book-to-pdf
+2024-08-01 21:22:44,046 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: ServletContext resource [/index.html]
+2024-08-01 21:22:46,082 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-01 21:22:46,291 INFO o.e.j.s.h.C.application [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-01 21:22:46,294 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcherServlet'
+2024-08-01 21:22:46,296 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 2 ms
+2024-08-01 21:22:46,380 INFO o.e.j.s.AbstractConnector [main] Started ServerConnector@fc37b19{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2024-08-01 21:22:46,384 INFO o.s.b.w.e.j.JettyWebServer [main] Jetty started on port 8080 (http/1.1) with context path '/'
+2024-08-01 21:22:46,414 INFO s.s.S.SPdfApplication [main] Started SPdfApplication in 21.241 seconds (process running for 37.428)
+2024-08-01 21:22:46,437 WARN s.s.S.u.FileMonitor [scheduling-1] not monitoring any directory, even the root directory itself: ./pipeline/watchedFolders
+2024-08-01 21:22:46,439 INFO s.s.S.u.FileMonitor [scheduling-1] Registered directory: ./pipeline/watchedFolders
+2024-08-01 21:22:47,435 INFO s.s.S.SPdfApplication [main] Stirling-PDF Started.
+2024-08-01 21:22:47,435 INFO s.s.S.SPdfApplication [main] Navigate to http://localhost:8080

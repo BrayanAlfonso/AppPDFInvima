@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html th:lang="${#locale.language}" th:dir="#{language.direction}" th:data-language="${#locale.toString()}"
+  xmlns:th="https://www.thymeleaf.org">
+
+<head>
+  <th:block th:insert="~{fragments/common :: head(title='')}"></th:block>
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <th:block th:insert="~{fragments/navbar.html :: navbar}"></th:block>
+      <!-- Jumbotron -->
+      <div class="p-5 rounded d-none d-md-block" id="jumbotron">
+        <div class="container">
+          <h1 class="display-4 fw-normal" th:text="${@appName}"></h1>
+          <p class="lead fs-4"
+            th:text="${@homeText != 'null' and @homeText != null and @homeText != ''} ? ${@homeText} : #{home.desc}">
+          </p>
+        </div>
+      </div>
+      <br class="d-md-none">
+      <!-- Features -->
+      <script th:src="@{'/js/homecard.js'}"></script>
+<div>
+<p style ="color:red;">Importante: el tamaño máximo de archivos que se pueden cargar en los modúlos es de 100 MB o 100.000 KB</p>
+</div>
+      <div class=" container">
+      
+	  <br>
+        <span class="material-symbols-rounded search-icon">
+          search
+        </span>
+        <input type="text" id="searchBar" onkeyup="filterCards()" th:placeholder="#{home.searchBar}" autofocus>
+        <div class="features-container">
+
+          <div th:if="${@shouldShow}" class="feature-card favorite update-notice" id="update-link" style="display: none;">
+            <a href="https://github.com/Stirling-Tools/Stirling-PDF/releases" target="_blank" rel="noopener">
+              <div class="d-flex align-items-center">
+                <div id="tool-icon" class="advance" alt="icon">
+                  <span class="material-symbols-rounded nav-icon">update</span>
+                </div>
+                <div id="tool-text">
+                  <h5 class="card-title" th:text="#{settings.update}"></h5>
+                  <p class="card-text" id="app-update"></p>
+                </div>
+              </div>
+            </a>
+          </div>
+                     
+          <div
+            th:replace="~{fragments/card :: card(id='multi-tool', cardTitle=#{home.multiTool.title}, cardText=#{home.multiTool.desc}, cardLink='multi-tool', toolIcon='construction', tags=#{multiTool.tags}, toolGroup='advance')}">
+          </div>
+          <div
+            th:replace="~{fragments/card :: card(id='merge-pdfs', cardTitle=#{home.merge.title}, cardText=#{home.merge.desc}, cardLink='merge-pdfs', toolIcon='add_to_photos', tags=#{merge.tags}, toolGroup='organize')}">
+          </div>
+         <div
+            th:replace="~{fragments/card :: card(id='split-pdfs', cardTitle=#{home.split.title}, cardText=#{home.split.desc}, cardLink='split-pdfs', toolIcon='cut', tags=#{split.tags}, toolGroup='organize')}">
+          </div>
+
+          <div
+            th:replace="~{fragments/card :: card(id='rotate-pdf', cardTitle=#{home.rotate.title}, cardText=#{home.rotate.desc}, cardLink='rotate-pdf', toolIcon='rotate_right', tags=#{rotate.tags}, toolGroup='organize')}">
+          </div>
+        
+          <div
+            th:replace="~{fragments/card :: card(id='img-to-pdf', cardTitle=#{home.imageToPdf.title}, cardText=#{home.imageToPdf.desc}, cardLink='img-to-pdf', toolIcon='image', tags=#{imageToPdf.tags}, toolGroup='image')}">
+          </div>
+          <div
+            th:replace="~{fragments/card :: card(id='pdf-to-img', cardTitle=#{home.pdfToImage.title}, cardText=#{home.pdfToImage.desc}, cardLink='pdf-to-img', toolIcon='image', tags=#{pdfToImage.tags}, toolGroup='image')}">
+          </div>
+
+          <div
+            th:replace="~{fragments/card :: card(id='pdf-organizer', cardTitle=#{home.pdfOrganiser.title}, cardText=#{home.pdfOrganiser.desc}, cardLink='pdf-organizer', toolIcon='format_list_bulleted', tags=#{pdfOrganiser.tags}, toolGroup='organize')}">
+          </div>
+
+          <div
+            th:replace="~{fragments/card :: card(id='file-to-pdf', cardTitle=#{home.fileToPDF.title}, cardText=#{home.fileToPDF.desc}, cardLink='file-to-pdf', toolIcon='draft', tags=#{fileToPDF.tags}, toolGroup='convert')}">
+          </div>
+
+          <div
+            th:replace="~{fragments/card :: card(id='compress-pdf', cardTitle=#{home.compressPdfs.title}, cardText=#{home.compressPdfs.desc}, cardLink='compress-pdf', toolIcon='zoom_in_map', tags=#{compressPdfs.tags}, toolGroup='advance')}">
+          </div>
+        
+          <div
+            th:replace="~{fragments/card :: card(id='pdf-to-word', cardTitle=#{home.PDFToWord.title}, cardText=#{home.PDFToWord.desc}, cardLink='pdf-to-word', toolIcon='description', tags=#{PDFToWord.tags}, toolGroup='word')}">
+          </div>
+          <div
+            th:replace="~{fragments/card :: card(id='pdf-to-presentation', cardTitle=#{home.PDFToPresentation.title}, cardText=#{home.PDFToPresentation.desc}, cardLink='pdf-to-presentation', toolIcon='slideshow', tags=#{PDFToPresentation.tags}, toolGroup='ppt')}">
+          </div>
+
+          <div
+            th:replace="~{fragments/card :: card(id='pdf-to-xml', cardTitle=#{home.PDFToXML.title}, cardText=#{home.PDFToXML.desc}, cardLink='pdf-to-xml', toolIcon='code', tags=#{PDFToXML.tags}, toolGroup='convert')}">
+          </div>
+          
+          <div
+            th:replace="~{fragments/card :: card(id='remove-blanks', cardTitle=#{home.removeBlanks.title}, cardText=#{home.removeBlanks.desc}, cardLink='remove-blanks', toolIcon='scan_delete', tags=#{removeBlanks.tags}, toolGroup='other')}">
+          </div>
+
+          <div
+            th:replace="~{fragments/card :: card(id='split-pdf-by-sections', cardTitle=#{home.split-by-sections.title}, cardText=#{home.split-by-sections.desc}, cardLink='split-pdf-by-sections', toolIcon='grid_on', tags=#{split-by-sections.tags}, toolGroup='advance')}">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <th:block th:insert="~{fragments/footer.html :: footer}"></th:block>
+  </div>
+  
+  
+  <!-- Survey Modal -->
+  <div class="modal fade" id="surveyModal" tabindex="-1" role="dialog" aria-labelledby="surveyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="surveyModalLabel" th:text="#{survey.title}">Stirling-PDF Survey</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p th:text="#{survey.description}">Stirling-PDF has no tracking so we want to hear from our users to improve Stirling-PDF!</h5>
+          <p th:text="#{survey.please}">Please consider taking our survey!</p>
+          <p th:text="#{survey.disabled}">Survey popup will be disabled in following updates but available at foot of page)</p>
+          <a href="https://stirlingpdf.info/s/clwzgtfw7000gltkmwz1n212m" target="_blank" class="btn btn-primary" id="takeSurvey"th:text="#{survey.button}" >Take Survey</a>
+        </div>
+        <div class="modal-footer">
+          <div class="form-check mb-3">
+            <input type="checkbox" id="dontShowAgain">
+            <label for="dontShowAgain" th:text="#{survey.dontShowAgain}">Don't show again</label>
+          </div>
+          
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" th:text="#{close}">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const surveyVersion = "1.1";
+      const modal = new bootstrap.Modal(document.getElementById('surveyModal'));
+      const dontShowAgain = document.getElementById('dontShowAgain');
+      const takeSurveyButton = document.getElementById('takeSurvey');
+    
+      if (localStorage.getItem('surveyVersion') !== surveyVersion || !localStorage.getItem('dontShowSurvey')) {
+        modal.show();
+      }
+
+    
+      dontShowAgain.addEventListener('change', function() {
+        if (this.checked) {
+          localStorage.setItem('dontShowSurvey', 'true');
+          localStorage.setItem('surveyVersion', surveyVersion);
+        } else {
+          localStorage.removeItem('dontShowSurvey');
+          localStorage.removeItem('surveyVersion');
+        }
+      });
+    
+      takeSurveyButton.addEventListener('click', function() {
+        localStorage.setItem('dontShowSurvey', 'true');
+        localStorage.setItem('surveyVersion', surveyVersion);
+        modal.hide();
+      });
+    
+      if (localStorage.getItem('dontShowSurvey')) {
+        modal.hide();
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>
